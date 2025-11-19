@@ -1,0 +1,29 @@
+# 使用 Alembic 生成迁移（示例指令，仅供参考）：
+# alembic revision -m "add verification_codes table"
+# 在生成的迁移文件中加入：
+
+from alembic import op
+import sqlalchemy as sa
+
+revision = 'add_verification_codes'
+down_revision = None
+branch_labels = None
+depends_on = None
+
+def upgrade():
+    op.create_table(
+        'verification_codes',
+        sa.Column('id', sa.Integer(), primary_key=True),
+        sa.Column('email', sa.String(length=255), nullable=False),
+        sa.Column('code', sa.String(length=6), nullable=False),
+        sa.Column('expires_at', sa.DateTime(timezone=True), nullable=False),
+        sa.Column('last_send_at', sa.DateTime(timezone=True), nullable=False),
+        sa.UniqueConstraint('email', name='uq_vcode_email')
+    )
+    op.create_index('ix_verification_codes_email', 'verification_codes', ['email'])
+    op.create_index('ix_verification_codes_expires_at', 'verification_codes', ['expires_at'])
+
+def downgrade():
+    op.drop_index('ix_verification_codes_expires_at', table_name='verification_codes')
+    op.drop_index('ix_verification_codes_email', table_name='verification_codes')
+    op.drop_table('verification_codes')

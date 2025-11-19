@@ -1,0 +1,1121 @@
+nohup: ignoring input
+INFO:     Will watch for changes in these directories: ['/home/ubuntu/bohack/bohack_backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [71618] using WatchFiles
+INFO:     Started server process [71620]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[DB] dialect: mysql driver: pymysql
+[DB] host: 127.0.0.1 port: 3306 database: eventdb
+[OK] Database tables ensured. Models: ['users', 'registrations', 'projects', 'attachments', 'verification_codes']
+INFO:     202.113.13.76:39317 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:17123 - "POST /auth/forgot-password/send-code HTTP/1.1" 422 Unprocessable Entity
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+INFO:     202.113.13.123:20358 - "POST /auth/forgot-password/send-code?email=3052073687@qq.com HTTP/1.1" 422 Unprocessable Entity
+INFO:     202.113.13.123:25701 - "POST /auth/forgot-password/send-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:46223 - "OPTIONS /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:45671 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:25670 - "POST /auth/send-verification-code HTTP/1.1" 429 Too Many Requests
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+INFO:     202.113.13.123:39153 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+INFO:     202.113.13.123:17339 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+INFO:     202.113.13.76:9274 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:24820 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+INFO:     202.113.13.123:47818 - "POST /auth/forgot-password/send-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:55223 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+INFO:     202.113.13.41:24902 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:14425 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:25193 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.76:41369 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.41:51111 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+INFO:     202.113.13.123:20428 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.76:35063 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+INFO:     202.113.13.76:27303 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+send_verification_code failed: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1107, in create_connection
+    sock = await self._connect_sock(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 1010, in _connect_sock
+    await self.sock_connect(sock, address)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/selector_events.py", line 651, in sock_connect
+    return await fut
+           ^^^^^^^^^
+asyncio.exceptions.CancelledError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 503, in _create_connection
+    transport, _ = await asyncio.wait_for(connect_coro, timeout=timeout)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/tasks.py", line 519, in wait_for
+    async with timeouts.timeout(timeout):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/timeouts.py", line 115, in __aexit__
+    raise TimeoutError from exc_val
+TimeoutError
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 47, in _configure_connection
+    await self.session.connect()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 453, in connect
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 446, in connect
+    response = await self._create_connection(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/aiosmtplib/smtp.py", line 505, in _create_connection
+    raise SMTPConnectTimeoutError(
+aiosmtplib.errors.SMTPConnectTimeoutError: Timed out connecting to smtp.feishu.cn on port 465
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/bohack/bohack_backend/app/core/mail.py", line 35, in send_verification_code
+    await fm.send_message(message)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/fastmail.py", line 151, in send_message
+    async with Connection(self.config) as session:
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 23, in __aenter__
+    await self._configure_connection()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi_mail/connection.py", line 56, in _configure_connection
+    raise ConnectionErrors(
+fastapi_mail.errors.ConnectionErrors: Exception raised Timed out connecting to smtp.feishu.cn on port 465, check your credentials or email service configuration
+INFO:     202.113.13.76:41030 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:27355 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:42330 - "OPTIONS /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:42332 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:17092 - "OPTIONS /auth/register HTTP/1.1" 200 OK
+INFO:     202.113.13.123:55543 - "POST /auth/register HTTP/1.1" 200 OK
+INFO:     202.113.13.123:25706 - "OPTIONS /auth/forgot-password/send-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:46194 - "POST /auth/forgot-password/send-code HTTP/1.1" 200 OK
+INFO:     202.113.13.41:56523 - "OPTIONS /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.41:56526 - "POST /auth/send-verification-code HTTP/1.1" 200 OK
+INFO:     202.113.13.123:38426 - "POST /auth/forgot-password/send-code HTTP/1.1" 429 Too Many Requests
+INFO:     202.113.13.41:9326 - "OPTIONS /auth/register HTTP/1.1" 200 OK
+INFO:     202.113.13.41:23532 - "POST /auth/register HTTP/1.1" 200 OK
+INFO:     202.113.13.41:38207 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37314 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37314 - "OPTIONS /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37324 - "GET /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37324 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:62869 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37355 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:62873 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     198.176.56.21:25209 - "POST /auth/forgot-password/send-code HTTP/1.1" 200 OK
+INFO:     198.176.56.21:10509 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     198.176.56.21:50537 - "OPTIONS /auth/forgot-password/reset HTTP/1.1" 200 OK
+INFO:     198.176.56.21:22353 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     198.176.56.21:18357 - "POST /auth/forgot-password/reset HTTP/1.1" 400 Bad Request
+INFO:     198.176.56.21:21347 - "POST /auth/login HTTP/1.1" 401 Unauthorized
+INFO:     198.176.56.21:42915 - "POST /auth/forgot-password/reset HTTP/1.1" 200 OK
+INFO:     198.176.56.21:3857 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     198.176.56.21:3857 - "OPTIONS /user/profile HTTP/1.1" 200 OK
+INFO:     198.176.56.21:42021 - "GET /user/profile HTTP/1.1" 200 OK
+INFO:     198.176.56.21:42021 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     198.176.56.21:61417 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     198.176.56.21:57275 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     198.176.56.21:2029 - "GET /registration/status HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     146.190.42.35:53472 - "GET / HTTP/1.1" 404 Not Found
+INFO:     146.190.42.35:53480 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:62911 - "POST /registration HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:59747 - "POST /upload/image?context=registration HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:24331 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:24332 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:13970 - "GET /registration/status HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:13989 - "GET /registration/status HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:13989 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:13970 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:13970 - "OPTIONS /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:20442 - "GET /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:20442 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:3340 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:3340 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:20442 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:38596 - "OPTIONS /upload/image HTTP/1.1" 200 OK
+INFO:     202.113.13.41:38597 - "POST /upload/image HTTP/1.1" 422 Unprocessable Entity
+INFO:     202.113.13.41:47236 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:51855 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:60862 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:24899 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:59743 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:59745 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:59749 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:59747 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:18999 - "OPTIONS /upload/image HTTP/1.1" 200 OK
+INFO:     202.113.13.41:19000 - "POST /upload/image HTTP/1.1" 422 Unprocessable Entity
+INFO:     202.113.13.41:62856 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:62857 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:50315 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:50316 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:12827 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:12828 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:55011 - "OPTIONS /upload/image HTTP/1.1" 200 OK
+INFO:     202.113.13.41:40566 - "POST /upload/image HTTP/1.1" 422 Unprocessable Entity
+INFO:     202.113.13.41:19498 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:19499 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:51982 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:51983 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:60022 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:60023 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:60025 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:61016 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:55036 - "OPTIONS /upload/image?context=registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:40523 - "POST /upload/image?context=registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:22702 - "OPTIONS /upload/image?context=registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:22705 - "POST /upload/image?context=registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:4284 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:4285 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:45371 - "POST /upload/image?context=registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:7335 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:23190 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:59989 - "POST /upload/image?context=registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:34677 - "POST /upload/image?context=registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:60031 - "POST /registration HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:37268 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:56530 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:56532 - "GET /registration/status HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:37270 - "GET /registration/status HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:55030 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:61971 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:61971 - "OPTIONS /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:61980 - "GET /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:61980 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:61982 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:63683 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:61987 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:61987 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:63683 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:19456 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:19956 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:18990 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:20383 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:24367 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:18820 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:3799 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:47894 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:6303 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:14428 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:14429 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:9338 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:10228 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:10231 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:37258 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:40559 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37260 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:40560 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:45486 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:45487 - "GET /registration/status HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:30176 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:47926 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:47926 - "OPTIONS /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:30178 - "GET /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:30178 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:30184 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:30185 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:30188 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:30185 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:30188 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:12634 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:42643 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:61983 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:61984 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:24383 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:59968 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:14423 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:56555 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:10070 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:10072 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:48211 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:48211 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:48218 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:23200 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:3381 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:18212 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:47597 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:54997 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:54999 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:55000 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:49219 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:13968 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:13970 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:48177 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:22035 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:15678 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:42685 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:15679 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:42686 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:51295 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:23492 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:60841 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:60840 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:60843 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:60845 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:22719 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:40350 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:57351 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:57349 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:57353 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:57352 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     3.149.59.26:43028 - "GET / HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:47275 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:55131 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:47277 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:47276 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:47277 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:47276 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:43031 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:43030 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:43031 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:43030 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:12612 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:43054 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     3.149.59.26:39584 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     202.113.13.41:61049 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:14415 - "GET /registration/status HTTP/1.1" 401 Unauthorized
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     202.113.13.41:43238 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:51109 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:51109 - "OPTIONS /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:51111 - "GET /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:51111 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:43246 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:51116 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:43248 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:51116 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:43248 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37259 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:37258 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:23179 - "OPTIONS /upload/image?context=registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:34549 - "POST /upload/image?context=registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:34549 - "OPTIONS /registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:34550 - "POST /registration HTTP/1.1" 200 OK
+INFO:     202.113.13.41:34550 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:18188 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:23202 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:23204 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:48234 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:22692 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:22692 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:48234 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:27572 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:27572 - "GET /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:27572 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:25198 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:25198 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:27572 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:27572 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:25198 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:49153 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37294 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37294 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:49153 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:49153 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:37294 - "GET /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:63720 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:63722 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:63723 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:63724 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:8668 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:8669 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:12655 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:12656 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:27540 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:59520 - "GET /registration/status HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:59520 - "OPTIONS /registration/status HTTP/1.1" 200 OK
+INFO:     202.113.13.41:3323 - "GET /registration/status HTTP/1.1" 401 Unauthorized
+INFO:     202.113.13.41:20228 - "OPTIONS /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:60832 - "POST /auth/login HTTP/1.1" 200 OK
+INFO:     202.113.13.41:60832 - "OPTIONS /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:60838 - "GET /user/profile HTTP/1.1" 200 OK
+INFO:     202.113.13.41:60838 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:20248 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:20248 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:60838 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:60838 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     202.113.13.41:20248 - "GET /registration/status HTTP/1.1" 404 Not Found
+INFO:     199.45.155.92:9964 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.155.92:56648 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.155.92:56700 - "GET /robots.txt HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     91.239.216.8:59102 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.154.123:34492 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.154.123:49006 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.154.123:18196 - "GET /robots.txt HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     139.59.4.30:49540 - "GET / HTTP/1.1" 404 Not Found
+INFO:     139.59.4.30:49556 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     198.235.24.128:65028 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     3.137.73.221:58106 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.137.73.221:52662 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     176.65.148.16:55548 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     64.62.156.152:63450 - "GET / HTTP/1.1" 404 Not Found
+INFO:     64.62.156.160:31019 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.62.156.152:39045 - "GET /?format=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.87:58450 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     147.185.132.210:64884 - "GET / HTTP/1.1" 404 Not Found
+INFO:     86.54.31.38:47220 - "GET / HTTP/1.1" 404 Not Found
+INFO:     86.54.31.38:48358 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.220:59976 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.203:48970 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.203:42006 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     206.168.34.203:21878 - "GET /security.txt HTTP/1.1" 404 Not Found
+INFO:     204.76.203.220:58984 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.168:61638 - "GET / HTTP/1.1" 404 Not Found
+INFO:     185.242.226.87:51854 - "GET / HTTP/1.1" 404 Not Found
+INFO:     185.242.226.87:60156 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     45.43.33.210:49741 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     165.154.232.148:35128 - "GET / HTTP/1.1" 404 Not Found
+INFO:     204.76.203.51:50662 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     209.38.207.208:9741 - "GET / HTTP/1.0" 404 Not Found
+INFO:     134.122.67.48:65104 - "GET /query?q=SHOW+DIAGNOSTICS HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     207.154.193.248:64302 - "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 Not Found
+INFO:     161.35.220.193:53072 - "GET /solr/admin/info/system HTTP/1.1" 404 Not Found
+INFO:     159.89.3.129:24630 - "GET /v2/_catalog HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     161.35.220.193:53076 - "GET /solr/admin/cores?action=STATUS&wt=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     103.203.57.20:35640 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.235.24.247:65514 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     101.42.170.135:50776 - "GET / HTTP/1.1" 404 Not Found
+INFO:     101.42.170.135:50784 - "GET / HTTP/1.1" 404 Not Found
+INFO:     101.42.170.135:50792 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     65.49.1.182:2070 - "GET / HTTP/1.1" 404 Not Found
+INFO:     65.49.1.185:62017 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     65.49.1.190:52889 - "GET /?format=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.139:64550 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.210.31.148:58232 - "GET / HTTP/1.1" 404 Not Found
+INFO:     36.112.213.61:52028 - "GET / HTTP/1.0" 404 Not Found
+INFO:     36.112.213.61:52030 - "HEAD / HTTP/1.1" 404 Not Found
+INFO:     36.112.213.61:52038 - "POST /sdk HTTP/1.1" 404 Not Found
+INFO:     36.112.213.61:52036 - "GET /nmaplowercheck1763518003 HTTP/1.1" 404 Not Found
+INFO:     36.112.213.61:52032 - "GET / HTTP/1.0" 404 Not Found
+INFO:     36.112.213.61:52040 - "GET /HNAP1 HTTP/1.1" 404 Not Found
+INFO:     36.112.213.61:52042 - "GET / HTTP/1.1" 404 Not Found
+INFO:     36.112.213.61:52044 - "GET /evox/about HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     36.112.213.61:35494 - "GET / HTTP/1.0" 404 Not Found
+INFO:     36.112.213.61:35496 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.146.48:64632 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.146.48:4150 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.146.48:46996 - "GET /security.txt HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/send-verification-code HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/register HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     111.172.6.233:45501 - "GET / HTTP/1.1" 404 Not Found
+INFO:     111.172.6.233:50389 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "OPTIONS /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "OPTIONS /auth/send-verification-code HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/send-verification-code HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /auth/register HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/register HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     3.149.59.26:57116 - "GET / HTTP/1.1" 404 Not Found
+INFO:     34.34.128.171:56980 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.137.73.221:51682 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     3.137.73.221:50772 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.18:49268 - "GET / HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "OPTIONS /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     204.76.203.18:41272 - "GET /bins/ HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "OPTIONS /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     204.76.203.18:38600 - "GET /bin/ HTTP/1.1" 404 Not Found
+INFO:     204.76.203.18:59138 - "GET /backup/ HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "OPTIONS /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "OPTIONS /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "OPTIONS /upload/image?context=registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /upload/image?context=registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/send-verification-code HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/register HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "POST /auth/forgot-password/send-code HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/forgot-password/reset HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "POST /upload/image?context=registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /v1/guest/comm/config HTTP/1.0" 404 Not Found
+INFO:     87.121.84.50:34304 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     87.121.84.50:34312 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     34.78.140.118:55980 - "GET / HTTP/1.1" 404 Not Found

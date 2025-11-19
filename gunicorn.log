@@ -1,0 +1,42 @@
+nohup: ignoring input
+[2025-11-17 09:45:42 +0000] [71582] [INFO] Starting gunicorn 23.0.0
+[2025-11-17 09:45:42 +0000] [71582] [INFO] Listening at: http://127.0.0.1:8000 (71582)
+[2025-11-17 09:45:42 +0000] [71582] [INFO] Using worker: uvicorn.workers.UvicornWorker
+[2025-11-17 09:45:42 +0000] [71583] [INFO] Booting worker with pid: 71583
+[2025-11-17 09:45:42 +0000] [71584] [INFO] Booting worker with pid: 71584
+[2025-11-17 09:45:42 +0000] [71585] [INFO] Booting worker with pid: 71585
+[2025-11-17 09:45:42 +0000] [71586] [INFO] Booting worker with pid: 71586
+[2025-11-17 09:45:43 +0000] [71584] [INFO] Started server process [71584]
+[2025-11-17 09:45:43 +0000] [71584] [INFO] Waiting for application startup.
+[2025-11-17 09:45:43 +0000] [71583] [INFO] Started server process [71583]
+[2025-11-17 09:45:43 +0000] [71583] [INFO] Waiting for application startup.
+[2025-11-17 09:45:43 +0000] [71584] [INFO] Application startup complete.
+[2025-11-17 09:45:43 +0000] [71583] [INFO] Application startup complete.
+[2025-11-17 09:45:43 +0000] [71586] [INFO] Started server process [71586]
+[2025-11-17 09:45:43 +0000] [71586] [INFO] Waiting for application startup.
+[2025-11-17 09:45:43 +0000] [71585] [INFO] Started server process [71585]
+[2025-11-17 09:45:43 +0000] [71585] [INFO] Waiting for application startup.
+[2025-11-17 09:45:43 +0000] [71586] [INFO] Application startup complete.
+[2025-11-17 09:45:43 +0000] [71585] [INFO] Application startup complete.
+[2025-11-17 09:46:54 +0000] [71582] [INFO] Handling signal: term
+[2025-11-17 09:46:54 +0000] [71583] [INFO] Shutting down
+[2025-11-17 09:46:54 +0000] [71586] [INFO] Shutting down
+[2025-11-17 09:46:54 +0000] [71584] [INFO] Shutting down
+[2025-11-17 09:46:54 +0000] [71585] [INFO] Shutting down
+[2025-11-17 09:46:54 +0000] [71583] [INFO] Waiting for application shutdown.
+[2025-11-17 09:46:54 +0000] [71586] [INFO] Waiting for application shutdown.
+[2025-11-17 09:46:54 +0000] [71583] [INFO] Application shutdown complete.
+[2025-11-17 09:46:54 +0000] [71586] [INFO] Application shutdown complete.
+[2025-11-17 09:46:54 +0000] [71583] [INFO] Finished server process [71583]
+[2025-11-17 09:46:54 +0000] [71586] [INFO] Finished server process [71586]
+[2025-11-17 09:46:54 +0000] [71584] [INFO] Waiting for application shutdown.
+[2025-11-17 09:46:54 +0000] [71584] [INFO] Application shutdown complete.
+[2025-11-17 09:46:54 +0000] [71584] [INFO] Finished server process [71584]
+[2025-11-17 09:46:54 +0000] [71585] [INFO] Waiting for application shutdown.
+[2025-11-17 09:46:54 +0000] [71585] [INFO] Application shutdown complete.
+[2025-11-17 09:46:54 +0000] [71585] [INFO] Finished server process [71585]
+[2025-11-17 09:46:54 +0000] [71582] [ERROR] Worker (pid:71583) was sent SIGTERM!
+[2025-11-17 09:46:54 +0000] [71582] [ERROR] Worker (pid:71586) was sent SIGTERM!
+[2025-11-17 09:46:54 +0000] [71582] [ERROR] Worker (pid:71584) was sent SIGTERM!
+[2025-11-17 09:46:54 +0000] [71582] [ERROR] Worker (pid:71585) was sent SIGTERM!
+[2025-11-17 09:46:54 +0000] [71582] [INFO] Shutting down: Master
