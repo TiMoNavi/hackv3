@@ -9,7 +9,7 @@ class Registration(Base):
 
     registrationId = Column(Integer, primary_key=True, autoincrement=True)
     uid = Column(Integer, ForeignKey("users.uid"), nullable=False, index=True)
-    note = Column(String(1000), nullable=True)
+    note = Column(String(100000), nullable=False)
     createdAt = Column(DateTime, default=lambda: datetime.utcnow(), nullable=False)
     status = Column(String(16), nullable=False, default="pending", server_default="pending")
 

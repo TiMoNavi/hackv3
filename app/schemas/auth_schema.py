@@ -13,14 +13,14 @@ class RefreshIn(BaseModel):
 
 
 class RegisterIn(BaseModel):
-    username: constr(min_length=3, max_length=50)
+    username: constr(min_length=1, max_length=50)
     email: EmailStr
     password: constr(min_length=6, max_length=128)
     verification_code: constr(min_length=6, max_length=6)
 
 
 class LoginIn(BaseModel):
-    username: Optional[constr(min_length=3, max_length=50)] = None
+    username: Optional[constr(min_length=1, max_length=50)] = None
     email: Optional[EmailStr] = None
     password: constr(min_length=6, max_length=128)
 

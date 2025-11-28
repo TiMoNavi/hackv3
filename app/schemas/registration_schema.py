@@ -5,14 +5,14 @@ from .attachment_schema import AttachmentOut
 
 
 class RegistrationIn(BaseModel):
-    note: Optional[constr(max_length=1000)] = None
+    note: constr(max_length=100000)
     attachment_ids: Optional[List[int]] = None
 
 
 class RegistrationOut(BaseModel):
     uid: int
     registrationId: int
-    note: Optional[str]
+    note: str
     createdAt: datetime
     status: str = 'pending'
 
