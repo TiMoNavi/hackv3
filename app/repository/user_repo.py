@@ -31,3 +31,15 @@ def create_user(db: Session, data: RegisterIn, uid: int, now: datetime) -> User:
     )
     db.add(u)
     return u
+
+
+def list_users(db: Session, page: int, page_size: int):
+    q = db.query(User)
+    total = q.count()
+    items = (
+        q.order_by(User.createdAt.desc())
+        .offset((page - 1) * page_size)
+        .limit(page_size)
+        .all()
+    )
+    return items, total

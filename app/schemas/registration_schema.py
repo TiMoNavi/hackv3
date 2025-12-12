@@ -20,3 +20,9 @@ class RegistrationOut(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+class AdminRegistrationCreate(BaseModel):
+    uid: int
+    note: constr(max_length=100000)
+    attachment_ids: Optional[List[int]] = None

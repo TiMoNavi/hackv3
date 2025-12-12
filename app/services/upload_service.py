@@ -3,7 +3,8 @@ from sqlalchemy.orm import Session
 from app.models import User
 from app.repository import attachment_repo
 from app.core.config import settings
-import os, uuid, mimetypes, imghdr
+import os, uuid, mimetypes
+import magic
 from app.models.attachment_model import Attachment
 
 SAFE_MIMES = {"image/jpeg", "image/png", "image/gif", "image/webp", "application/pdf"}
@@ -12,9 +13,12 @@ SAFE_MIMES = {"image/jpeg", "image/png", "image/gif", "image/webp", "application
 def guess_mime(filename: str, header_bytes: bytes) -> str:
     mime = mimetypes.guess_type(filename)[0]
     if not mime:
-        kind = imghdr.what(None, header_bytes)
-        if kind:
-            mime = f"image/{kind}"
+        try:
+            detected = magic.from_buffer(header_bytes, mime=True)
+            if detected:
+                mime = detected
+        except Exception:
+            mime = None
     if not mime and header_bytes.startswith(b'%PDF-'):
         mime = "application/pdf"
     return mime or "application/octet-stream"

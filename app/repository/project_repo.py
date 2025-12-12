@@ -37,3 +37,20 @@ def get_projects_by_uid(db: Session, user_id: int) -> List[Project]:
         .order_by(Project.createdAt.desc())
         .all()
     )
+
+
+def update_project(db: Session, project: Project, *, title=None, description=None, repoUrl=None, demoUrl=None) -> Project:
+    if title is not None:
+        project.title = title
+    if description is not None:
+        project.description = description
+    if repoUrl is not None:
+        project.repoUrl = repoUrl
+    if demoUrl is not None:
+        project.demoUrl = demoUrl
+    db.add(project)
+    return project
+
+
+def delete_project(db: Session, project: Project):
+    db.delete(project)

@@ -21,6 +21,7 @@ from app.routers.user_router import router as user_router
 from app.routers.registration_router import router as registration_router
 from app.routers.project_router import router as project_router
 from app.routers.upload_router import router as upload_router
+from app.routers.admin import router as admin_router
 
 
 app = FastAPI(title="Event Backend")
@@ -42,6 +43,7 @@ app.include_router(user_router)
 app.include_router(registration_router)
 app.include_router(project_router)
 app.include_router(upload_router)
+app.include_router(admin_router)
 
 
 if not settings.SECURITY_KEY or len(settings.SECURITY_KEY) < 32:
@@ -81,4 +83,3 @@ def on_startup():
 def healthz():
     from datetime import datetime, timezone
     return {"ok": True, "time": datetime.now(timezone.utc).isoformat()}
-

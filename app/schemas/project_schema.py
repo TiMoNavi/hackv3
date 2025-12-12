@@ -26,3 +26,10 @@ class ProjectOut(BaseModel):
 
     class Config:
         from_attributes = True
+
+
+class ProjectUpdate(BaseModel):
+    title: Optional[constr(min_length=1, max_length=200)] = None
+    description: Optional[constr(min_length=1, max_length=5000)] = None
+    repoUrl: Optional[constr(max_length=500)] = None
+    demoUrl: Optional[constr(max_length=500)] = None

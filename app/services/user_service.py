@@ -38,3 +38,7 @@ class UserService:
             self.db.rollback()
             if isinstance(e, ConflictError): raise e
             raise HTTPException(status_code=500, detail=f"更新失败: {str(e)}")
+
+    def get_all_users(self, page: int, page_size: int = 20):
+        items, total = user_repo.list_users(self.db, page, page_size)
+        return {"items": items, "total": total, "page": page, "page_size": page_size}

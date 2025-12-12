@@ -74,6 +74,16 @@ def get_current_user(
     return user
 
 
+def get_current_admin(
+    authorization: Optional[str] = Header(None, alias="Authorization"),
+    db: Session = Depends(get_db),
+) -> User:
+    user = get_current_user(authorization, db)
+    if not getattr(user, "isAdmin", False):
+        raise HTTPException(status_code=403, detail="需要管理员权限")
+    return user
+
+
 def _truncate_for_bcrypt(raw: str) -> bytes:
     # bcrypt 只接受前 72 个字节，这里对 utf-8 编码后的字节流截断，避免 ValueError
 

@@ -3677,3 +3677,1273 @@ INFO:     176.65.149.35:44778 - "GET /index.htm HTTP/1.1" 404 Not Found
 WARNING:  Invalid HTTP request received.
 WARNING:  Invalid HTTP request received.
 INFO:     176.65.149.35:44812 - "GET / HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "OPTIONS /auth/send-verification-code HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/send-verification-code HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /auth/register HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/register HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "OPTIONS /registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     167.172.174.71:29987 - "GET / HTTP/1.0" 404 Not Found
+INFO:     104.248.44.176:28802 - "GET /query?q=SHOW+DIAGNOSTICS HTTP/1.1" 404 Not Found
+INFO:     104.248.22.187:25340 - "GET /solr/admin/info/system HTTP/1.1" 404 Not Found
+INFO:     165.227.143.235:26986 - "GET /cgi-bin/authLogin.cgi HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     64.226.66.124:33568 - "GET /v2/_catalog HTTP/1.1" 404 Not Found
+INFO:     104.248.22.187:25356 - "GET /solr/admin/cores?action=STATUS&wt=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     104.248.44.176:28808 - "GET / HTTP/1.1" 404 Not Found
+INFO:     46.101.185.200:41738 - "GET / HTTP/1.1" 404 Not Found
+INFO:     157.245.156.89:60602 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     50.7.252.138:45902 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     123.160.223.73:7702 - "GET / HTTP/1.1" 404 Not Found
+INFO:     113.141.85.139:54650 - "GET / HTTP/1.1" 404 Not Found
+INFO:     125.122.15.87:34990 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     209.38.156.38:53086 - "GET / HTTP/1.1" 404 Not Found
+INFO:     209.38.156.38:53088 - "GET /login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.138.194:7016 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.138.194:43412 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.138.194:9744 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     39.107.158.136:0 - "GET /.env HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     39.107.158.136:0 - "POST /auth/send-verification-code HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/register HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/register HTTP/1.0" 400 Bad Request
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "POST /registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     198.235.24.120:63662 - "GET / HTTP/1.1" 404 Not Found
+INFO:     147.185.132.153:57730 - "GET / HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+WARNING:  Invalid HTTP request received.
+INFO:     65.49.20.67:24470 - "GET / HTTP/1.1" 404 Not Found
+INFO:     65.49.20.83:10985 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     65.49.20.79:47907 - "GET /?format=json HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     39.107.158.136:0 - "POST /upload/image?context=registration HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     198.175.124.2:58128 - "GET / HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     3.132.23.201:48942 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.132.23.201:42878 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     47.99.115.135:53572 - "GET / HTTP/1.0" 404 Not Found
+INFO:     47.99.115.135:53966 - "GET /nmaplowercheck1764394652 HTTP/1.1" 404 Not Found
+INFO:     47.99.115.135:53972 - "GET / HTTP/1.0" 404 Not Found
+INFO:     47.99.115.135:53968 - "POST /sdk HTTP/1.1" 404 Not Found
+INFO:     47.99.115.135:53988 - "GET /HNAP1 HTTP/1.1" 404 Not Found
+INFO:     47.99.115.135:53996 - "GET /evox/about HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     47.99.115.135:54418 - "GET / HTTP/1.0" 404 Not Found
+INFO:     47.99.115.135:54420 - "GET / HTTP/1.1" 404 Not Found
+INFO:     195.178.110.109:52990 - "GET /.git/config HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     195.178.110.109:51262 - "GET / HTTP/1.1" 404 Not Found
+INFO:     198.175.124.2:56066 - "GET / HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.51:52812 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     8.219.209.185:55688 - "GET / HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     34.38.106.200:36982 - "GET / HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     198.175.124.10:52928 - "GET / HTTP/1.1" 404 Not Found
+INFO:     103.203.57.20:42774 - "GET / HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "POST /upload/image?context=registration HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "POST /upload/image?context=registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /registration HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 200 OK
+INFO:     198.235.24.154:64222 - "GET / HTTP/1.1" 404 Not Found
+INFO:     204.76.203.51:44812 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     147.185.132.156:57994 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     157.230.161.32:42988 - "GET / HTTP/1.1" 404 Not Found
+INFO:     157.230.161.32:43004 - "GET /login HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /.env HTTP/1.0" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /.git/config HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     91.239.216.9:59928 - "GET /index.htm HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     91.239.216.9:59918 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.51:45842 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     170.64.143.248:46046 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     170.64.143.248:46060 - "GET /.git/config HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.51:37560 - "GET / HTTP/1.1" 404 Not Found
+INFO:     205.210.31.215:58844 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.153.134:45240 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     66.132.153.134:45286 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:41740 - "GET / HTTP/1.0" 404 Not Found
+INFO:     54.193.19.205:47184 - "GET / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47224 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47202 - "PROPFIND / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47172 - "OPTIONS / HTTP/1.1" 200 OK
+INFO:     54.193.19.205:47230 - "POST /sdk HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47180 - "GET /.git/HEAD HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47214 - "GET /nmaplowercheck1764451536 HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47248 - "PROPFIND / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47252 - "OPTIONS / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     54.193.19.205:47190 - "POST / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47254 - "OPTIONS / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47264 - "GET / HTTP/1.0" 404 Not Found
+INFO:     54.193.19.205:47276 - "OPTIONS / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     54.193.19.205:47294 - "GET /evox/about HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47314 - "GET /HNAP1 HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47304 - "PROPFIND / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47324 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47330 - "GET / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47346 - "GET / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47354 - "OPTIONS / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     54.193.19.205:47360 - "HEAD / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47358 - "OPTIONS / HTTP/1.1" 200 OK
+INFO:     54.193.19.205:47372 - "OPTIONS / HTTP/1.1" 200 OK
+INFO:     54.193.19.205:47384 - "POST / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47394 - "OPTIONS / HTTP/1.1" 400 Bad Request
+INFO:     54.193.19.205:47396 - "OPTIONS / HTTP/1.1" 404 Not Found
+INFO:     54.193.19.205:47408 - "OPTIONS / HTTP/1.1" 200 OK
+INFO:     54.193.19.205:53776 - "OPTIONS / HTTP/1.1" 400 Bad Request
+INFO:     54.193.19.205:53784 - "OPTIONS / HTTP/1.1" 200 OK
+INFO:     54.193.19.205:53794 - "GET / HTTP/1.0" 404 Not Found
+INFO:     54.193.19.205:53810 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.155.96:45378 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.155.96:52840 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     199.45.155.96:49232 - "GET /.well-known/security.txt HTTP/1.1" 404 Not Found
+INFO:     39.107.158.136:0 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.0" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     8.219.209.185:59836 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     39.107.158.136:0 - "GET /.env HTTP/1.0" 404 Not Found
+WARNING:  WatchFiles detected changes in 'app/core/security.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [188998]
+INFO:     Started server process [563411]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/routers/admin/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [563411]
+WARNING:  WatchFiles detected changes in 'app/routers/admin/__init__.py'. Reloading...
+INFO:     Started server process [563644]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [563672]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/main.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [563672]
+INFO:     Started server process [563840]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/services/upload_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [563840]
+INFO:     Started server process [566822]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/services/stats_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [566822]
+WARNING:  WatchFiles detected changes in 'app/services/stats_service.py'. Reloading...
+INFO:     Started server process [570284]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Started server process [570361]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/routers/admin/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [570361]
+INFO:     Started server process [570562]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/repository/registration_repo.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [570562]
+INFO:     Started server process [578034]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/services/registration_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [578034]
+INFO:     Started server process [578277]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/repository/user_repo.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [578277]
+INFO:     Started server process [578437]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/services/user_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [578437]
+INFO:     Started server process [578672]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/routers/admin/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [578672]
+INFO:     Started server process [578845]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/routers/admin/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [578845]
+INFO:     Started server process [586301]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+[DB] dialect: mysql driver: pymysql
+[DB] host: 127.0.0.1 port: 3306 database: eventdb
+[OK] Database tables ensured. Models: ['users', 'registrations', 'projects', 'attachments', 'verification_codes']
+INFO:     20.221.68.122:36240 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  WatchFiles detected changes in 'app/schemas/project_schema.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [586301]
+INFO:     Started server process [604463]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/repository/project_repo.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [604463]
+INFO:     Started server process [604813]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/routers/admin/__init__.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [604813]
+Process SpawnProcess-18:
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 71, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 78, in _serve
+    config.load()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/config.py", line 438, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/bohack/bohack_backend/app/main.py", line 24, in <module>
+    from app.routers.admin import router as admin_router
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/admin/__init__.py", line 12, in <module>
+    from app.schemas import RegistrationOut, PublicUser, ProjectOut, ProjectUpdate
+ImportError: cannot import name 'ProjectUpdate' from 'app.schemas' (/home/ubuntu/bohack/bohack_backend/app/schemas/__init__.py)
+WARNING:  WatchFiles detected changes in 'app/repository/registration_repo.py'. Reloading...
+Process SpawnProcess-19:
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 71, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 78, in _serve
+    config.load()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/config.py", line 438, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/bohack/bohack_backend/app/main.py", line 24, in <module>
+    from app.routers.admin import router as admin_router
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/admin/__init__.py", line 12, in <module>
+    from app.schemas import RegistrationOut, PublicUser, ProjectOut, ProjectUpdate
+ImportError: cannot import name 'ProjectUpdate' from 'app.schemas' (/home/ubuntu/bohack/bohack_backend/app/schemas/__init__.py)
+WARNING:  WatchFiles detected changes in 'app/services/registration_service.py'. Reloading...
+Process SpawnProcess-20:
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 71, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 78, in _serve
+    config.load()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/config.py", line 438, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/bohack/bohack_backend/app/main.py", line 24, in <module>
+    from app.routers.admin import router as admin_router
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/admin/__init__.py", line 12, in <module>
+    from app.schemas import RegistrationOut, PublicUser, ProjectOut, ProjectUpdate
+ImportError: cannot import name 'ProjectUpdate' from 'app.schemas' (/home/ubuntu/bohack/bohack_backend/app/schemas/__init__.py)
+WARNING:  WatchFiles detected changes in 'app/routers/admin/__init__.py'. Reloading...
+Process SpawnProcess-21:
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 71, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 78, in _serve
+    config.load()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/config.py", line 438, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/bohack/bohack_backend/app/main.py", line 24, in <module>
+    from app.routers.admin import router as admin_router
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/admin/__init__.py", line 12, in <module>
+    from app.schemas import RegistrationOut, PublicUser, ProjectOut, ProjectUpdate
+ImportError: cannot import name 'ProjectUpdate' from 'app.schemas' (/home/ubuntu/bohack/bohack_backend/app/schemas/__init__.py)
+WARNING:  WatchFiles detected changes in 'app/schemas/__init__.py'. Reloading...
+INFO:     Started server process [628138]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+[DB] dialect: mysql driver: pymysql
+[DB] host: 127.0.0.1 port: 3306 database: eventdb
+[OK] Database tables ensured. Models: ['users', 'registrations', 'projects', 'attachments', 'verification_codes']
+INFO:     39.107.158.136:0 - "OPTIONS /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /auth/login HTTP/1.0" 200 OK
+INFO:     198.235.24.149:61254 - "GET / HTTP/1.1" 404 Not Found
+INFO:     176.65.149.35:51576 - "GET / HTTP/1.1" 404 Not Found
+INFO:      - "GET /index.htm HTTP/1.1" 404 Not Found
+WARNING:  WatchFiles detected changes in 'app/schemas/registration_schema.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [628138]
+INFO:     Started server process [635315]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  WatchFiles detected changes in 'app/services/registration_service.py'. Reloading...
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [635315]
+Process SpawnProcess-24:
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 71, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 78, in _serve
+    config.load()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/config.py", line 438, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/bohack/bohack_backend/app/main.py", line 21, in <module>
+    from app.routers.registration_router import router as registration_router
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 8, in <module>
+    from app.services.registration_service import RegistrationService
+  File "/home/ubuntu/bohack/bohack_backend/app/services/registration_service.py", line 4, in <module>
+    from app.schemas import RegistrationIn, AdminRegistrationCreate
+ImportError: cannot import name 'AdminRegistrationCreate' from 'app.schemas' (/home/ubuntu/bohack/bohack_backend/app/schemas/__init__.py)
+WARNING:  WatchFiles detected changes in 'app/routers/admin/__init__.py'. Reloading...
+Process SpawnProcess-25:
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+    self.run()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/multiprocessing/process.py", line 108, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/_subprocess.py", line 80, in subprocess_started
+    target(sockets=sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 67, in run
+    return asyncio_run(self.serve(sockets=sockets), loop_factory=self.config.get_loop_factory())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 71, in serve
+    await self._serve(sockets)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/server.py", line 78, in _serve
+    config.load()
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/config.py", line 438, in load
+    self.loaded_app = import_from_string(self.app)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/importer.py", line 19, in import_from_string
+    module = importlib.import_module(module_str)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 999, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/home/ubuntu/bohack/bohack_backend/app/main.py", line 21, in <module>
+    from app.routers.registration_router import router as registration_router
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 8, in <module>
+    from app.services.registration_service import RegistrationService
+  File "/home/ubuntu/bohack/bohack_backend/app/services/registration_service.py", line 4, in <module>
+    from app.schemas import RegistrationIn, AdminRegistrationCreate
+ImportError: cannot import name 'AdminRegistrationCreate' from 'app.schemas' (/home/ubuntu/bohack/bohack_backend/app/schemas/__init__.py)
+WARNING:  WatchFiles detected changes in 'app/schemas/__init__.py'. Reloading...
+INFO:     Started server process [642633]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+WARNING:  Invalid HTTP request received.
+[DB] dialect: mysql driver: pymysql
+[DB] host: 127.0.0.1 port: 3306 database: eventdb
+[OK] Database tables ensured. Models: ['users', 'registrations', 'projects', 'attachments', 'verification_codes']
+INFO:     39.107.158.136:0 - "OPTIONS /registration/status HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "OPTIONS /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "OPTIONS /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/applications.py", line 1133, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 389, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 290, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 40, in get_registration_status
+    return ok(RegistrationOut.model_validate(reg).model_dump())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/pydantic/main.py", line 716, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for RegistrationOut
+note
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/applications.py", line 1133, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 389, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 290, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 40, in get_registration_status
+    return ok(RegistrationOut.model_validate(reg).model_dump())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/pydantic/main.py", line 716, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for RegistrationOut
+note
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/applications.py", line 1133, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 389, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 290, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 40, in get_registration_status
+    return ok(RegistrationOut.model_validate(reg).model_dump())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/pydantic/main.py", line 716, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for RegistrationOut
+note
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/applications.py", line 1133, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 389, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 290, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 40, in get_registration_status
+    return ok(RegistrationOut.model_validate(reg).model_dump())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/pydantic/main.py", line 716, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for RegistrationOut
+note
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/applications.py", line 1133, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 389, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 290, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 40, in get_registration_status
+    return ok(RegistrationOut.model_validate(reg).model_dump())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/pydantic/main.py", line 716, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for RegistrationOut
+note
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+INFO:     3.130.96.91:39106 - "GET / HTTP/1.1" 404 Not Found
+INFO:     3.130.96.91:42582 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.51:37422 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     195.184.76.114:46419 - "GET / HTTP/1.1" 404 Not Found
+INFO:     195.184.76.239:56739 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     64.226.98.14:45468 - "GET /aaa9 HTTP/1.1" 404 Not Found
+INFO:     64.226.98.14:45474 - "GET /aab8 HTTP/1.1" 404 Not Found
+INFO:     64.226.98.14:45480 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 401 Unauthorized
+INFO:     39.107.158.136:0 - "POST /auth/login HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /user/profile HTTP/1.0" 200 OK
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/applications.py", line 1133, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 389, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 290, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 40, in get_registration_status
+    return ok(RegistrationOut.model_validate(reg).model_dump())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/pydantic/main.py", line 716, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for RegistrationOut
+note
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/applications.py", line 1133, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 389, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 290, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 40, in get_registration_status
+    return ok(RegistrationOut.model_validate(reg).model_dump())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/pydantic/main.py", line 716, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for RegistrationOut
+note
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+INFO:     39.107.158.136:0 - "GET /registration/status HTTP/1.0" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/protocols/http/httptools_impl.py", line 409, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/applications.py", line 1133, in __call__
+    await super().__call__(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/applications.py", line 113, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 186, in __call__
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/cors.py", line 85, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 63, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/middleware/asyncexitstack.py", line 18, in __call__
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 716, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 736, in app
+    await route.handle(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/routing.py", line 290, in handle
+    await self.app(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 123, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+    raise exc
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+    await app(scope, receive, sender)
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 109, in app
+    response = await f(request)
+               ^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 389, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/fastapi/routing.py", line 290, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/starlette/concurrency.py", line 38, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 2485, in run_sync_in_worker_thread
+    return await future
+           ^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 976, in run
+    result = context.run(func, *args)
+             ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/bohack/bohack_backend/app/routers/registration_router.py", line 40, in get_registration_status
+    return ok(RegistrationOut.model_validate(reg).model_dump())
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/ubuntu/miniconda3/envs/bohack/lib/python3.12/site-packages/pydantic/main.py", line 716, in model_validate
+    return cls.__pydantic_validator__.validate_python(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+pydantic_core._pydantic_core.ValidationError: 1 validation error for RegistrationOut
+note
+  Input should be a valid string [type=string_type, input_value=None, input_type=NoneType]
+    For further information visit https://errors.pydantic.dev/2.12/v/string_type
+WARNING:  Invalid HTTP request received.
+INFO:     91.196.152.2:33463 - "GET / HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     91.196.152.118:49803 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     204.76.203.51:46844 - "GET / HTTP/1.1" 404 Not Found
